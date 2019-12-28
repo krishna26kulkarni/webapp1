@@ -7,9 +7,9 @@ phases:
     runtime-versions:
       java: corretto11
   pre_build:
-     run-as: ec2-user
-     commands:
-     
+    run-as: ec2-user
+    commands:
+      - mkdir /var/www/html
   build:
     commands:
       - cp index.html /var/www/html
