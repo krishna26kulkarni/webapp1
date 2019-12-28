@@ -1,6 +1,6 @@
 version: 0.2
 
-run-as: ec2-user
+run-as: root
 
 phases:
   install:
@@ -9,10 +9,10 @@ phases:
   pre_build:
     run-as: ec2-user
     commands:
-      - mkdir '/var/www/html'
+      - 'mkdir /var/www/html'
   build:
     commands:
-      - cp index.html '/var/www/html'
+      - cp index.html /var/www/html'
 artifacts:
   files:
      - '**/*'
