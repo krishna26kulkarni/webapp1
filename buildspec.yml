@@ -1,13 +1,10 @@
 version: 0.2
 
-run-as: root
-
 phases:
   install:
     runtime-versions:
       docker: 18
   pre_build:
-    run-as: ec2-user
     commands:
       - 'mkdir /var/www/html'
   build:
