@@ -9,7 +9,7 @@ phases:
       - 'mkdir /var/www/html'
   build:
     commands:
-      - cp index.html /var/www/html'
+      - 'cp index.html /var/www/html'
 artifacts:
   files:
      - '**/*'
