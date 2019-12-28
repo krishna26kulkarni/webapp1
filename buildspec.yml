@@ -5,7 +5,7 @@ run-as: ec2-user
 phases:
   install:
     runtime-versions:
-      java: openjdk8
+      java: corretto11
   build:
     commands:
       - cp index.html /var/www/html
