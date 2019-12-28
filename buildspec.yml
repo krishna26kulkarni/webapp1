@@ -9,5 +9,5 @@ phases:
      - cp index.html /var/www/html
 artifacts:
   files:
-    - /index.html
+    - index.html
     - appspec.yml
