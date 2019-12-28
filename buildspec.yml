@@ -5,15 +5,14 @@ run-as: ec2-user
 phases:
   install:
     runtime-versions:
-      java: corretto11
+      docker: 18
   pre_build:
     run-as: ec2-user
     commands:
-      - mkdir /var/www/html
+      - mkdir '/var/www/html'
   build:
     commands:
-      - cp index.html /var/www/html
+      - cp index.html '/var/www/html'
 artifacts:
   files:
-    - index.html
-    - appspec.yml
+     - '**/*'
