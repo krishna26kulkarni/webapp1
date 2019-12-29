@@ -4,12 +4,9 @@ phases:
   install:
     runtime-versions:
       docker: 18
-  pre_build:
-    commands:
-      - 'mkdir -p /var/www/html'
   build:
     commands:
-      - 'cp index.html /var/www/html'
+      - 'echo This is webapp1'
 artifacts:
   files:
      - '**/*'
