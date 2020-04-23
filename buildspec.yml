@@ -4,9 +4,16 @@ phases:
   install:
     runtime-versions:
       docker: 18
+    commands:
+      - yum -y install python36u
+      - yum -y install python36u-pip
+      - pip3.6 install --upgrade pip
+      - pip3.6 install Flask
   build:
     commands:
-      - 'echo This is webapp1'
+      - echo This is webapp1 build using python      
+  post_build:
+      - python3.6 
 artifacts:
   files:
      - '**/*'
