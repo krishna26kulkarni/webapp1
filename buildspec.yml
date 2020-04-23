@@ -13,7 +13,7 @@ phases:
     commands:
       - echo This is webapp1 build using python      
   post_build:
-      - python3.6 
+      - python3.6 app.py
 artifacts:
   files:
      - '**/*'
